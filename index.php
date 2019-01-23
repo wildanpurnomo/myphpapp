@@ -16,25 +16,23 @@ if(isset($_SESSION['username'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
-<div class="title">
-    <h3>"All in One" Side Project</h3>
-</div>
-
-<div class="form">
-    <form method="POST" action = index.php >
-        <label id="lblUsername">Username</label>
-        <input type="text" name = "username" required><br><br>
-
-        <label id="lblPassword" >Password</label>
-        <input type="password" name = "password" required> <br><br>
-
-        <input type="submit" name = "submitLogin" value = "Login">
-
-        <a href="register.php">Buat akun!</a>
-    </form>
-</div>
+    <div class="cont">
+        <div class="title">
+            <h3>"All in One" Side Project</h3>
+        </div>
+        <div class="form">
+            <form method="POST" action=index.php>
+                <input id="formUsername" type="text" name="username" placeholder="Username" required><br><br>
+                <input id="formPassword" type="password" name="password" placeholder="Password" required> <br><br>
+                <input id="formSubmitLogin" type="submit" name="submitLogin" value="Login"><br>
+                <a id="linkRegister" href="register.php">Buat akun!</a>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
 

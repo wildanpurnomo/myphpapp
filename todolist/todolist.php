@@ -16,25 +16,26 @@ if (!isset($_SESSION['username'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To-do-lists</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/todolist.css">
 </head>
 <body>
-    <div class="form">
-        <form action="" method="POST">
-            <label id="lblActivity">Activity </label>
-            <input type="text" name="activity" required>
-            &nbsp;
-            <label id="lblTime">Date</label>
-            <input type="date" name="date" required>
-            &nbsp;
-            <input type="submit" name="submitLists" value="Submit">
-            &nbsp;
-            <a href= "../mainpage.php">Back</a>
-        </form>
-    </div>
-
-    <hr>
-
-    <div class="listsdisplayer">
+    <div class="cont">
+        <div class="form">
+            <form action="" method="POST">
+                <label id="lblActivity">Activity </label>
+                <input type="text" name="activity" required>
+                &nbsp;
+                <label id="lblTime">Date</label>
+                <input type="date" name="date" required>
+                &nbsp;
+                <input type="submit" name="submitLists" value="Submit">
+                &nbsp;
+                <a href= "../mainpage.php">Back</a>
+            </form>
+        </div>
+        <hr>
+        <div class="listsdisplayer">
         <h3>Your To-Do-Lists</h3>
         <div class="searchdate">
             <form action="" method="GET">
@@ -109,6 +110,11 @@ if (!isset($_SESSION['username'])) {
         }
         ?>
     </div>
+    </div>
+
+
+
+
 </body>
 </html>
 <?php

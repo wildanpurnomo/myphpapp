@@ -10,18 +10,22 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
-
-<form method="POST" action = "register.php" >
-<label id="lblUsername">Username</label>
-<input type="text" name = "username" required><br><br>
-
-<label id="lblPassword">Password</label>
-<input type="password" name = "password" required> <br><br>
-
-<input type="submit" name = "submitRegister" value = "Register">
-    
+    <div class="cont">
+        <div class="title">
+            <h3>Register New Account</h3>
+        </div>
+        <div class="form">
+            <form method="POST" action="register.php">
+                <input id="formUsername" type="text" name="username" placeholder="Username" required><br><br>
+                <input id="formPassword" type="password" name="password" placeholder="Password" required> <br><br>
+                <input id="formSubmitLogin" type="submit" name="submitRegister" value="Register"><br>
+            </form>
+        </div>
+    </div>    
 </body>
 </html>
 

@@ -1,0 +1,24 @@
+body{
+    background-image: url("../img/morocco.png") ;
+    font-family: Verdana;
+}
+
+.cont{
+    background-color: white;
+    background-size: cover;
+    border-style: solid;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+}
+
+
+
+
+

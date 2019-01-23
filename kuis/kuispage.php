@@ -41,55 +41,57 @@ function checkTesStatus($username){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kuis Online</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/soal.css">
 </head>
 <body>
-<h3>Soal gampang gampangan</h3>
+    <div class="cont">
+        <div class="headerSoal">
+            <center>
+                <h1>Soal</h1>
+            </center>
+        </div>
+        <div class="soal">
+            <form action="kuispage.php" method="POST">
+                <div class="no1">
+                    1. Apa lambang Indonesia <br>
+                    <input type="radio" name="question-1-answers" value="Singa"> Singa
+                    <input type="radio" name="question-1-answers" value="Macan"> Macan
+                    <input type="radio" name="question-1-answers" value="Garuda"> Garuda
+                </div>
 
-<div class="soal">
+                <br>
 
-<form action="kuispage.php" method="POST">
+                <div class="no2">
+                    2. Siapakah Presiden Indonesia saat ini <br>
+                    <input type="radio" name="question-2-answers" value="SBY"> SBY
+                    <input type="radio" name="question-2-answers" value="Jokowi"> Jokowi
+                    <input type="radio" name="question-2-answers" value="#2019gantipresiden"> #2019gantipresiden
+                </div>
 
-<div class="no1">
-1. Apa lambang Indonesia <br>
-<input type="radio" name="question-1-answers" value="Singa"> Singa
-<input type="radio" name="question-1-answers" value="Macan"> Macan
-<input type="radio" name="question-1-answers" value="Garuda"> Garuda
-</div>
+                <br>
 
-<br>
+                <div class="no3">
+                    3. Dimana ibukota Indonesia? <br>
+                    <input type="radio" name="question-3-answers" value="Jakarta"> Jakarta
+                    <input type="radio" name="question-3-answers" value="Sidoarjo pls choose ths"> Sidoarjo pls choose
+                    this
+                    <input type="radio" name="question-3-answers" value="Bali"> Bali
+                </div>
 
-<div class="no2">
-2. Siapakah Presiden Indonesia saat ini <br>
-<input type="radio" name="question-2-answers" value="SBY"> SBY
-<input type="radio" name="question-2-answers" value="Jokowi"> Jokowi
-<input type="radio" name="question-2-answers" value="#2019gantipresiden"> #2019gantipresiden
-</div>
+                <br>
 
-<br>
-
-<div class="no3">
-3. Dimana ibukota Indonesia? <br>
-<input type="radio" name="question-3-answers" value="Jakarta"> Jakarta
-<input type="radio" name="question-3-answers" value="Sidoarjo pls choose ths"> Sidoarjo pls choose this
-<input type="radio" name="question-3-answers" value="Bali"> Bali
-</div>
-
-<br>
-
-<div class="no4">
-4. Developer project ini? <br>
-<input type="radio" name="question-4-answers" value="Wildan"> Wildan
-<input type="radio" name="question-4-answers" value="notWildan"> notWildan
-<input type="radio" name="question-4-answers" value="!Wildan"> !Wildan
-</div>
-
-<br><br>
-
-<input type="submit" name = "submitAnswers" value="Submit" onclick="return confirm('Are you sure')">
-</form>
-
-</div>
-
+                <div class="no4">
+                    4. Developer project ini? <br>
+                    <input type="radio" name="question-4-answers" value="Wildan"> Wildan
+                    <input type="radio" name="question-4-answers" value="notWildan"> notWildan
+                    <input type="radio" name="question-4-answers" value="!Wildan"> !Wildan
+                </div>
+                <br>
+                <input id="formSubmitSoal" type="submit" name="submitAnswers" value="Submit" onclick="return confirm('Are you sure')">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
 

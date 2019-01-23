@@ -1,0 +1,26 @@
+.cont{
+    background-color: white;
+    background-size: cover;
+    border-style: solid;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+}
+
+.soal{
+    font-size: 15pt;
+    margin-left: 10px;
+    
+}
+
+.soal #formSubmitSoal{
+    font-size: 15pt;
+    font-family: Verdana;
+    width: 100px;
+    height: 50px;
+}

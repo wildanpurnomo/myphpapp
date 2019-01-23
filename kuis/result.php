@@ -31,17 +31,21 @@ function fetchScore($username){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Result</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/result.css">
 </head>
 <body>
-<?php 
-echo "You have taken the quiz \n";
-echo "Your Score is " . $score . "\n";
-if($score == 100){
-    echo "Well Played!\n";
-}
-?>
-
-<a href= "../mainpage.php">Back</a>
-
+    <div class="cont">
+        <h1>
+            <?php 
+                echo "You have taken the quiz \n";
+                echo "Your Score is " . $score . "\n";
+                if($score == 100){
+                    echo "Well Played!\n";
+                }
+            ?>  
+            <a href= "../mainpage.php">Back</a>
+        </h1>
+    </div>
 </body>
 </html>
