@@ -1,8 +1,8 @@
 <?php
-$servername = "";
-$username = "";
+$servername = "localhost";
+$username = "root";
 $password = "";
-$dbname = "";
+$dbname = "kuisonline";
 
 //Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
